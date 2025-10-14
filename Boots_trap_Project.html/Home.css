@@ -1,0 +1,397 @@
+.video-background {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+  object-fit: scale-down;
+}
+.btn-close{
+  color: white;
+}
+.offcanvas-header{
+  background-color: rgb(39, 39, 39);
+  color: white ;
+}
+.offcanvas-body{
+  background-color: rgb(37, 37, 37);
+  color: white;
+}
+.navbar {
+  background-color: rgba(38, 36, 36, 0.3);
+}
+
+.booking-form {
+  top: 100px;
+  right: 100px;
+}
+
+.text-start {
+  top: 200px;
+  left: 90px;
+  color: white;
+  margin-right: 650px;
+}
+
+.img1 {
+  height: 200px;
+  width: 650px;
+}
+
+.Get-Started {
+  background-color: rgb(0, 140, 173);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white;
+}
+
+
+.navbar .navbar-brand {
+  color: white;
+}
+
+.navbar ul li a {
+  color: white;
+}
+
+.drop ul li a:hover {
+  color: rgb(0, 140, 173);
+}
+
+.btn-2 {
+  background-color: rgb(0, 140, 173);
+  color: white;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 40px;
+  margin-right: 10px;
+  border-style: none;
+  /* width: 20%; */
+}
+
+.btn-3 {
+  background-color: transparent;
+  color: white;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 40px;
+  margin-right: 10px;
+  border-color: white;
+  /* width: 20%; */
+}
+
+.Cot {
+  color: rgb(0, 140, 173);
+}
+
+.Cot-1 {
+  background-color: rgb(0, 140, 173);
+}
+
+.btn-3:hover {
+  background-color: rgb(0, 140, 173);
+  border-style: none;
+}
+
+.display-3 {
+  font-weight: 650;
+  /* padding-right: 300px; */
+  color: white;
+}
+
+.sub-text {
+  text-align: justify;
+  font-size: smaller;
+  color: rgb(0, 0, 0);
+}
+
+.booking-form {
+  height: 500px;
+  border-radius: 20px;
+}
+
+.p1 {
+  /* margin-left: 100px; */
+  margin-top: 100px;
+}
+
+.btn-4 {
+  background-color: rgb(112, 211, 234);
+  color: rgb(0 140 173);
+}
+
+.Svg {
+  padding-top: 15px;
+  height: 90px;
+  width: 95px;
+  color: rgb(0 140 173);
+  background-color: rgb(171, 240, 255);
+  border-radius: 45px;
+
+}
+
+.Svg:hover {
+  color: white;
+  background-color: rgb(0 140 173);
+}
+
+.small {
+  background-color: rgb(0, 140, 173);
+  color: white;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 40px;
+  border-color: transparent;
+}
+
+.bi-geo-alt,
+.bi-suitcase-lg,
+.bi-calendar-check {
+  color: rgb(0 140 173);
+}
+
+.EN {
+  background-color: rgb(232, 233, 233, 0.4);
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  border-radius: 40px;
+  margin-right: 10px;
+  border-style: none;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.badge-custom {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f05454;
+  color: white;
+  font-size: 0.8rem;
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+
+.card-img-top {
+  height: 160px;
+  object-fit: cover;
+}
+
+.price {
+  color: #0077b6;
+  font-weight: bold;
+}
+
+.Price {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(49, 49, 49, 0.6);
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.bd1 {
+  background-color: rgb(83, 212, 169);
+}
+
+.bd2 {
+  background-color: rgb(239, 134, 255);
+}
+
+.bd3 {
+  background-color: #e67e22;
+}
+
+.Position {
+  position: absolute;
+  left: 450px;
+}
+
+.profile-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+}
+
+button {
+  border-style: none;
+}
+
+.btn-5 {
+  color: white;
+  background-color: rgb(0 140 173);
+  font-weight: 750;
+  text-transform: uppercase;
+  border-style: none;
+}
+
+.H1 {
+  font-size: 50px;
+  font-weight: 800;
+  color: white;
+}
+
+.purecounter {
+  color: white;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.stat-label {
+  color: white;
+  font-size: medium;
+}
+
+.brg {
+  background-color: rgb(242, 248, 249);
+}
+
+.tx {
+  color: rgb(28, 75, 86);
+}
+
+.Exp {
+  color: white;
+  background-color: rgb(0, 140, 173);
+  border: 2.5px solid rgb(0, 140, 173);
+  border-radius: 20px;
+}
+
+.btn-7 {
+  border: 5px soild rgb(0, 140, 173);
+  color: rgb(0, 140, 173);
+}
+
+.brd {
+  border-left: 10px solid rgb(0, 140, 173);
+}
+
+.call {
+  color: rgb(0, 140, 173);
+}
+
+.env1 {
+  height: 90px;
+  width: 85px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  background-color: rgb(0, 140, 173);
+  color: white;
+  border-radius: 15px;
+
+}
+
+.ct-1 {
+  align-items: center;
+}
+
+.txt-1 {
+  font-size: small;
+  font-weight: 100;
+}
+
+.bi-chevron-compact-right {
+  color: rgb(0, 140, 173);
+}
+
+.subscribe-card {
+  max-width: 900px;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.icon-box {
+  background-color: #008B9A;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  color: white;
+}
+
+.icon-box i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.form-control {
+  border-radius: 2rem;
+}
+.a1 .View {
+  background-color: transparent;
+  color: rgb(0, 140, 173);
+  border: 2.5px solid rgb(0, 140, 173);
+}
+
+.a1 .View:hover {
+  color: white;
+  background-color: rgb(0, 140, 173);
+}
+
+.Badge {
+  position: absolute;
+  left: 370px;
+  top: 10px;
+  border: 1.5px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+}

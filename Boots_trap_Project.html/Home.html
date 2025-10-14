@@ -1,0 +1,1244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Home.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <title>Tour Bootstrap template Demo</title>
+</head>
+
+<body>
+  <section id="hero" class="hero d-flex align-items-center position-relative pb-4 pt-5">
+    <video autoplay muted loop playsinline class="w-100 h-100 object-fit-cover position-absolute top-0 start-0">
+      <source src="https://bootstrapmade.com/content/demo/Tour/assets/img/travel/video-2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+
+    <div class="overlay position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+    <nav class="navbar navbar-expand-lg  fixed-top top-0 m-2 border rounded-pill bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="#">Tour</a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body drop">
+            <ul class="navbar-nav  justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active link-light" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Destination</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Tours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" mx-lg-2 href="#">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" mx-lg-2 href="#">Blog</a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  More Pages
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" mx-lg-2 href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="Get-Started">Get Started</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container position-relative text-light">
+      <div class="row align-items-center">
+
+        <div class="col-lg-7 mt-5">
+          <h1 class="display-3 fw-bold">Discover Your Perfect Journey</h1>
+          <p class="lead mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis tempora consequuntur
+            facere architecto dolor molestiae.</p>
+          <div class="d-grid gap-2 d-md-block">
+            <button class="btn   btn-lg ms-2 mb-3 border-0 rounded-3" type="button" style="color: white;
+                    background-color: rgb(0, 140, 173);">Start Exploring</button>
+            <button class="btn btn btn-outline-light rounded-3 btn-lg  mb-3 Hover" type="button" style=".Hover:hover{
+                color: white;
+                background-color: rgb(0, 140, 173);
+              }
+              ">browse Tours</button>
+          </div>
+        </div>
+
+        <div class="col-lg-5 col-md-6 col-sm-12 mt-4 mt-lg-5">
+          <div class="card bg-dark text-light p-4 rounded-4 shadow-lg ">
+            <h3 class="form-title text-center mb-3">Plan Your Adventure</h3>
+            <form>
+              <div class="mb-3">
+                <label for="destination" class="form-label">Destination</label>
+                <select id="destination" class="form-select" required>
+                  <option value="">Choose your destination</option>
+                  <option value="europe">Europe</option>
+                  <option value="asia">Asia</option>
+                  <option value="america">America</option>
+                  <option value="africa">Africa</option>
+                  <option value="oceania">Oceania</option>
+                </select>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="checkin" class="form-label">Departure Date</label>
+                  <input type="date" id="checkin" class="form-control" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="checkout" class="form-label">Return Date</label>
+                  <input type="date" id="checkout" class="form-control" required>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <label for="adults" class="form-label">Adults</label>
+                  <select id="adults" class="form-select">
+                    <option>1 Adult</option>
+                    <option>2 Adults</option>
+                    <option>3 Adults</option>
+                    <option>4+ Adults</option>
+                  </select>
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="children" class="form-label">Children</label>
+                  <select id="children" class="form-select">
+                    <option>No Children</option>
+                    <option>1 Child</option>
+                    <option>2 Children</option>
+                    <option>3+ Children</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="tour-type" class="form-label">Tour Type</label>
+                <select id="tour-type" class="form-select" required>
+                  <option value="">Select tour type</option>
+                  <option value="adventure">Adventure</option>
+                  <option value="cultural">Cultural</option>
+                  <option value="relaxation">Relaxation</option>
+                  <option value="family">Family</option>
+                  <option value="luxury">Luxury</option>
+                </select>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">Find Your Perfect Trip</button>
+            </form>
+          </div>
+        </div>
+
+  </section>
+
+  <div class="container-fluid py-5">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0" style="font-family: Roboto;font-size:18px;">
+        <h2 class="fw-bold">Explore the World with Confidence</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+          anim id est laborum.</p>
+        <div class="d-flex flex-wrap gap-4 mt-4">
+          <div>
+            <h3 class="fw-bold Cot">1200</h3>
+            <p class="mb-0">Happy Travelers</p>
+          </div>
+          <div>
+            <h3 class="fw-bold Cot">85</h3>
+            <p class="mb-0">Countries Covered</p>
+          </div>
+          <div>
+            <h3 class="fw-bold Cot">15</h3>
+            <p class="mb-0">Years Experience</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12">
+        <div class="position-relative">
+          <img src="https://bootstrapmade.com/content/demo/Tour/assets/img/travel/showcase-8.webp"
+            class="img-fluid rounded-4" alt="Travel Image">
+
+          <div class="position-absolute bottom-0 start-0 m-3 Cot-1 text-white px-4 py-3 rounded-3 shadow">
+            <h5 class="fw-bold mb-0">15+</h5>
+            <small>Years of Excellence</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="card text-center position-relative border-0 mt-4">
+    <h2 class="card-title" style="font-family: Raleway, sans-serif; color: rgb(28 75 86);">Why Choose Us for Your Next
+      Adventure</h2>
+    <p class="card-text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis
+      nostrud exercitation ullamco laboris.</p>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 g-4 p-4">
+    <div class="col">
+      <div class="card h-100 text-center p-2">
+        <div class="Svg mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-people-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+          </svg>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Local Experts</h5>
+          <p class="card-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+            laudantium totam.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center p-2">
+        <div class="Svg mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-shield-check"
+            viewBox="0 0 16 16">
+            <path
+              d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56" />
+            <path
+              d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+          </svg>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Safe & Secure</h5>
+          <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+            voluptatum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center p-2">
+        <div class="Svg mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cash"
+            viewBox="0 0 16 16">
+            <path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4" />
+            <path
+              d="M0 4a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V6a2 2 0 0 1-2-2z" />
+          </svg>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Best Prices</h5>
+          <p class="card-text">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur adipisci
+            velit.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center p-2">
+        <div class="Svg mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-headset"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5" />
+          </svg>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">24/7 Support</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class=" card h-100 text-center p-2">
+        <div class="Svg mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-geo-alt"
+            viewBox="0 0 16 16">
+            <path
+              d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+          </svg>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Global Destinations</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 text-center p-2">
+        <div class="Svg mx-auto">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-star-fill"
+            viewBox="0 0 16 16">
+            <path
+              d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Premium Experience</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+            content. This content is a little bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <figure class="text-center">
+    <figcaption class="blockquote" style="font-family:Raleway, sans-serif;font-size:25px;">
+      <span class="badge badge-1 ps-3 pe-3 pt-2 pb-2 mt-3"
+        style="color: rgb(0 140 173);background-color: rgb(180, 241, 255);">Featured Destinations</span>
+    </figcaption>
+    <blockquote class="blockquote h2" style="font-family:Raleway, sans-serif;font-size:30px;">
+      <p>Check Our <span style="color:rgb(0, 140, 173);">Featured Destinations</span></p>
+    </blockquote>
+  </figure>
+
+  <div class="container-fluid position-relative">
+    <div class="row ">
+      <div class="col-lg-6 col-md-8 col-sm-12 gd-2 my-5">
+        <div class="card border-0 text-bg-dark  align-items-center mt-3 ms-3">
+          <img src="../Boots_trap_Project.html/IMages-1/destination-3.webp" class=" d-flex" alt="...">
+          <div class="card-img-overlay">
+            <button type="button" class="small">Popular Choice</button>
+            <h5 class="card-title h3 mt-2">Tropical Paradise</h5>
+            <div class="card-body">
+              <div class="text-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                </svg>
+                <span>Maldives</span>
+              </div>
+              <p class="para text-light mt-4">Pristine beaches, crystal-clear waters, and luxury overwater villas
+                await in this tropical paradise destination.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span class="text-light">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-suitcase-lg" viewBox="0 0 16 16">
+                    <path
+                      d="M5 2a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2h3.5A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5H14a.5.5 0 0 1-1 0H3a.5.5 0 0 1-1 0h-.5A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2zm1 0h4a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1M1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5H3V3zM15 12.5v-9a.5.5 0 0 0-.5-.5H13v10h1.5a.5.5 0 0 0 .5-.5m-3 .5V3H4v10z" />
+                  </svg>
+                  22 package</span>
+                <span class="position-absolute" style="margin-left: 125px;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-star-fill" viewBox="0 0 16 16">
+                    <path
+                      d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                  </svg>
+                  4.9(412)
+                </span>
+                <div class="position-absolute top-50 start-0 ms-5">
+                  <p>STARTING FROM</p>
+                  <p style="font-weight: 700; color: rgb(6, 148, 179);font-size: 50px;">$2,150</p>
+                  <button type="button" class="EN">Explore Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+    <div class="col-lg-6 col-md-12 mt-md-5">
+      <div class="card mb-3 shadow-sm ">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../Boots_trap_Project.html/IMages-1/destination-11.webp" 
+                 class="img-fluid rounded-start h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <span class="badge bg-danger mb-2">BEST VALUE</span>
+              <h5 class="card-title fw-bold">Mountain Adventure</h5>
+              <p class="card-text">Breathtaking Himalayan peaks and ancient Buddhist temples create an unforgettable journey.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-calendar-check"></i> 16 Tours</span>
+                <span><i class="bi bi-star-fill text-warning"></i> 4.8</span>
+                <span class="text-info fw-bold">from $1,420</span>
+              </div>
+              <a href="#" class="d-block mt-3 fw-bold text-decoration-none text-info">View Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 shadow-sm">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../Boots_trap_Project.html/IMages-1/destination-7.webp" 
+                 class="img-fluid rounded-start h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title fw-bold">Cultural Heritage</h5>
+              <p class="card-text">Discover ancient civilizations, colorful markets, and archaeological wonders.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-calendar-check"></i> 9 Expeditions</span>
+                <span><i class="bi bi-star-fill text-warning"></i> 4.7</span>
+                <span class="text-info fw-bold">from $980</span>
+              </div>
+              <a href="#" class="d-block mt-3 fw-bold text-decoration-none text-info">View Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 shadow-sm">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../Boots_trap_Project.html/IMages-1/destination-16.webp" 
+                 class="img-fluid rounded-start h-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <span class="badge bg-warning text-dark mb-2">LIMITED SPOTS</span>
+              <h5 class="card-title fw-bold">Safari Experience</h5>
+              <p class="card-text">Witness the Big Five and the great migration in Africa’s most spectacular safari destinations.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <span><i class="bi bi-calendar-check"></i> 11 Safaris</span>
+                <span><i class="bi bi-star-fill text-warning"></i> 4.9</span>
+                <span class="text-info fw-bold">from $2,750</span>
+              </div>
+              <a href="#" class="d-block mt-3 fw-bold text-decoration-none text-info">View Details →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <div class=" text-center position-relative m-5">
+    <span class="badge badge-1  ps-3 pe-3 pt-2 pb-2 mt-3"
+      style="color: rgb(0 140 173);background-color: rgb(180, 241, 255);">Feastured Tour</span>
+    <blockquote class="blockquote h2" style="font-family:Raleway, sans-serif;font-size:30px;">
+      <p>Check Our <span style="color:rgb(0, 140, 173);">Featured Tours</span></p>
+    </blockquote>
+  </div>
+  <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-4 p-3">
+    <div class="col cols-sm-1 cols-md-2 cols-lg-3">
+      <div class="card">
+        <span class="badge badge-custom w-25 rounded-3 ">ONLY 3 SPOTS!</span>
+         <button class="Price" type="button">$2,150</button>
+        <img src="../Boots_trap_Project.html/IMages-1/tour-1.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Serene Beach Retreat</h5>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+              viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+            </svg>
+            8 Days &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-people" viewBox="0 0 16 16">
+              <path
+                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+            </svg>Max 6</p>
+          <p>Mauris ipsum neque, cursus ac ipsum at, iaculis facilisis ligula. Suspendisse non sapien vel enim cursus
+            semper.</p>
+          <div class="mb-2">
+            <span class="badge bg-light text-dark location-badge">Maldives</span>
+            <span class="badge bg-light text-dark location-badge">Seychelles</span>
+            <span class="badge bg-light text-dark location-badge">Bora Bora</span>
+          </div>
+          <button class="btn btn-info text-white">Book Now</button>
+          <div class="mt-2 text-warning">★★★★☆<small>(4.8/95)</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="col cols-sm-1 cols-md-2 cols-lg-3">
+      <div class="card">
+        <span class="badge bg-DANGER text-white badge-custom">ONLY 3 SPOTS!</span>
+        <button class="Price" type="button">$2,150</button>
+        <img src="../Boots_trap_Project.html/IMages-1/tour-2.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Arctic Wilderness Expedition</h5>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+              viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+            </svg>
+            10 Days &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-people" viewBox="0 0 16 16">
+              <path
+                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+            </svg>Max 8</p>
+          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec dictum non
+            massa nec fermentum.</p>
+          <div class="mb-2">
+            <span class="badge bg-light text-dark location-badge">Greenland</span>
+            <span class="badge bg-light text-dark location-badge">Iceland</span>
+            <span class="badge bg-light text-dark location-badge">Norway</span>
+          </div>
+          <button class="btn btn-info text-white">Book Now</button>
+          <div class="mt-2 text-warning">★★★★☆ <small>(4.6/55)</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="col cols-sm-1 cols-md-2 cols-lg-3">
+      <div class="card">
+        <span class="badge bd1 text-white badge-custom">ONLY 3 SPOTS!</span>
+        <button class="Price" type="button">$2,150</button>
+        <img src="../Boots_trap_Project.html/IMages-1/tour-3.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Sahara Desert Discovery</h5>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+              viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+            </svg>
+            5 Days &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-people" viewBox="0 0 16 16">
+              <path
+                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+            </svg>Max 10</p>
+          <p>Pellentesque euismod tincidunt turpis ac tristique. Phasellus vitae lacus in enim mollis facilisis vel quis
+            ex. In hac habitasse platea dictumst.</p>
+          <div class="mb-2">
+            <span class="badge bg-light text-dark location-badge">Morocco</span>
+            <span class="badge bg-light text-dark location-badge">Egypt</span>
+            <span class="badge bg-light text-dark location-badge">Dubai</span>
+          </div>
+          <button class="btn btn-info text-white">Book Now</button>
+          <div class="mt-2 text-warning">★★★★☆<small>(4.9/72)</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="col cols-sm-1 cols-md-2 cols-lg-3">
+      <div class="card">
+        <span class="badge bg3 text-white badge-custom">ONLY 3 SPOTS!</span>
+        <button class="Price" type="button">$2,150</button>
+        <img src="../Boots_trap_Project.html/IMages-1/tour-4.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Patagonian Peaks & Glaciers</h5>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+              viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+            </svg>
+            14 Days &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-people" viewBox="0 0 16 16">
+              <path
+                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+            </svg>Max 10</p>
+          <p>Vivamus eget semper neque. Ut porttitor mi at odio egestas, non vestibulum est malesuada. Nunc facilisis in
+            felis eget efficitur.</p>
+          <div class="mb-2">
+            <span class="badge bg-light text-dark location-badge">Argentina</span>
+            <span class="badge bg-light text-dark location-badge">Chile</span>
+            <span class="badge bg-light text-dark location-badge">Ushuaia</span>
+          </div>
+          <button class="btn btn-info text-white">Book Now</button>
+          <div class="mt-2 text-warning">★★★★☆<small>(4.9/60)</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="col cols-sm-1 cols-md-2 cols-lg-3">
+      <div class="card">
+        <span class="badge bd2 text-white badge-custom">ECO FRIENDLY</span>
+        <button class="Price" type="button">$2,150</button>
+        <img src="../Boots_trap_Project.html/IMages-1/tour-5.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Amazon Rainforest Trek</h5>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+              viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+            </svg>
+            12 Days &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-people" viewBox="0 0 16 16">
+              <path
+                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+            </svg>Max 10</p>
+          <p>Quisque dictum felis eu tortor mollis, quis tincidunt arcu pharetra. A pellentesque sit amet, consectetur
+            adipiscing elit.</p>
+          <div class="mb-2">
+            <span class="badge bg-light text-dark location-badge">Brazil</span>
+            <span class="badge bg-light text-dark location-badge">Ecuador</span>
+            <span class="badge bg-light text-dark location-badge">Peru</span>
+          </div>
+          <button class="btn btn-info text-white">Book Now</button>
+          <div class="mt-2 text-warning">★★★★☆ <small>(4.5/88)</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="col cols-sm-1 cols-md-2 cols-lg-3">
+      <div class="card">
+        <span class="badge bg3 text-white badge-custom">ONLY 3 SPOTS!</span>
+        <button class="Price" type="button">$2,150</button>
+        <img src="../Boots_trap_Project.html/IMages-1/tour-6.webp" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Patagonian Peaks & Glaciers</h5>
+          <p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock"
+              viewBox="0 0 16 16">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+            </svg>
+            14 Days &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-people" viewBox="0 0 16 16">
+              <path
+                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1zm-7.978-1L7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002-.014.002zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4m3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0M6.936 9.28a6 6 0 0 0-1.23-.247A7 7 0 0 0 5 9c-4 0-5 3-5 4q0 1 1 1h4.216A2.24 2.24 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816M4.92 10A5.5 5.5 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0m3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+            </svg>Max 10</p>
+          <p>Vivamus eget semper neque. Ut porttitor mi at odio egestas, non vestibulum est malesuada. Nunc facilisis in
+            felis eget efficitur.</p>
+          <div class="mb-2">
+            <span class="badge bg-light text-dark location-badge">Argentina</span>
+            <span class="badge bg-light text-dark location-badge">Chile</span>
+            <span class="badge bg-light text-dark location-badge">Ushuaia</span>
+          </div>
+          <button class="btn btn-info text-white">Book Now</button>
+          <div class="mt-2 text-warning">★★★★☆ <small>(4.9/60)</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-center a1">
+    <button type="button" class="btn  m-3 ps-5 pe-5 pt-3 pb-3 View"">View all</button>
+  </div>
+  <div class=" slide">
+      <span class="badge badge-1 position-relative top-0 start-50 translate-middle ps-3 pe-3 pt-2 pb-2 mt-3"
+        style="color: rgb(0 140 173);background-color: rgb(180, 241, 255);">Testimonials</span>
+      <div class="d-flex justify-content-center">
+        <p class="display-5 fw-medium ">What Our Customers <span class="display-5 fw-medium"
+            style="color: rgb(0 140 173);">Are Saying</span></p>
+      </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12 col-lg-4 d-none d-lg-block">
+                    <div class="card text-center p-4 mt-4" style="width: 450px;">
+                      <div class="cont">
+                        <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                          <span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem eum
+                              reprehenderit.
+                              Error
+                              minus
+                              molestiae ex in similique consequuntur. Nostrum voluptatem accusantium doloremque libero
+                              voluptates
+                              quaerat
+                              nobis
+                              corrupti ea eos!</p>
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote " viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <img src="../Boots_trap_Project.html/IMages-1/person-m-1.webp" alt="Profile"
+                          class="profile-img">
+                        <h5 class="mt-2">jena karlis 1</h5>
+                        <h6 class="mt-2">store owner</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-4 d-none d-lg-block">
+                    <div class="card text-center p-4 mt-4" style="width: 450px;">
+                      <div class="cont">
+                        <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                          <span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem eum
+                              reprehenderit.
+                              Error
+                              minus
+                              molestiae ex in similique consequuntur. Nostrum voluptatem accusantium doloremque libero
+                              voluptates
+                              quaerat
+                              nobis
+                              corrupti ea eos!</p>
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote " viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <img src="../Boots_trap_Project.html/IMages-1/person-f-5.webp" alt="Profile"
+                          class="profile-img">
+                        <h5 class="mt-2">Sara Willison</h5>
+                        <h6 class="mt-2">Designer</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-lg-4">
+                    <div class="card text-center p-4 mt-4" style="width: 450px;">
+                      <div class="cont">
+                        <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                          <span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem eum
+                              reprehenderit.
+                              Error
+                              minus
+                              molestiae ex in similique consequuntur. Nostrum voluptatem accusantium doloremque libero
+                              voluptates
+                              quaerat
+                              nobis
+                              corrupti ea eos!</p>
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote " viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <img src="../Boots_trap_Project.html/IMages-1/person-m-2.webp" alt="Profile"
+                          class="profile-img">
+                        <h5 class="mt-2">Matt Barndon</h5>
+                        <h6 class="mt-2">Freelancer</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12 col-lg-4 d-none d-lg-block ">
+                    <div class="card text-center p-4 mt-4" style="width: 450px;">
+                      <div class="cont">
+                        <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                          <span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem eum
+                              reprehenderit.
+                              Error
+                              minus
+                              molestiae ex in similique consequuntur. Nostrum voluptatem accusantium doloremque libero
+                              voluptates
+                              quaerat
+                              nobis
+                              corrupti ea eos!</p>
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote " viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <img src="../Boots_trap_Project.html/IMages-1/person-m-2.webp" alt="Profile"
+                          class="profile-img">
+                        <h5 class="mt-2">Saul Goodman</h5>
+                        <h6 class="mt-2">CEO & Co-Founder</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-4 d-none d-lg-block ">
+                    <div class="card text-center p-4 mt-4" style="width: 450px;">
+                      <div class="cont">
+                        <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                          <span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem eum
+                              reprehenderit.
+                              Error
+                              minus
+                              molestiae ex in similique consequuntur. Nostrum voluptatem accusantium doloremque libero
+                              voluptates
+                              quaerat
+                              nobis
+                              corrupti ea eos!</p>
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote " viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <img src="../Boots_trap_Project.html/IMages-1/person-m-2.webp" alt="Profile"
+                          class="profile-img">
+                        <h5 class="mt-2">Jhon Larwson</h5>
+                        <h6 class="mt-2">Enterprenure</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-lg-4 ">
+                    <div class="card text-center p-4 mt-2" style="width: 450px;">
+                      <div class="cont">
+                        <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                          <span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem eum
+                              reprehenderit.
+                              Error
+                              minus
+                              molestiae ex in similique consequuntur. Nostrum voluptatem accusantium doloremque libero
+                              voluptates
+                              quaerat
+                              nobis
+                              corrupti ea eos!</p>
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote " viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <img src="../Boots_trap_Project.html/IMages-1/person-f-5.webp" alt="Profile"
+                          class="profile-img">
+                        <h5 class="mt-2">jena karlis 1</h5>
+                        <h6 class="mt-2">store owner</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-12 col-lg-4 d-none d-lg-block ">
+                    <img src="..." class="d-block w-100" alt="...">
+                    <div class="card text-center p-4 " style="width: 450px;">
+                      <div class="cont">
+                        <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                          <span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem eum
+                              reprehenderit.
+                              Error
+                              minus
+                              molestiae ex in similique consequuntur. Nostrum voluptatem accusantium doloremque libero
+                              voluptates
+                              quaerat
+                              nobis
+                              corrupti ea eos!</p>
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote " viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <img src="../Boots_trap_Project.html/IMages-1/person-m-1.webp" alt="Profile"
+                          class="profile-img">
+                        <h5 class="mt-2">Saul Goodman</h5>
+                        <h6 class="mt-2">CEO & Co-Founder</h6>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12 col-lg-4 d-none d-lg-block ">
+                    <div class="card text-center p-4 mt-4" style="width: 450px;">
+                      <div class="cont">
+                        <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                          <span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem eum
+                              reprehenderit.
+                              Error
+                              minus
+                              molestiae ex in similique consequuntur. Nostrum voluptatem accusantium doloremque libero
+                              voluptates
+                              quaerat
+                              nobis
+                              corrupti ea eos!</p>
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote " viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <img src="../Boots_trap_Project.html/IMages-1/person-f-5.webp" alt="Profile"
+                          class="profile-img">
+                        <h5 class="mt-2">Sara Willison</h5>
+                        <h6 class="mt-2">Designer</h6>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-12 col-lg-4 ">
+                    <div class="card text-center p-4 mt-4" style="width: 450px;">
+                      <div class="cont">
+                        <p>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote" viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                          <span>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem eum
+                              reprehenderit.
+                              Error
+                              minus
+                              molestiae ex in similique consequuntur. Nostrum voluptatem accusantium doloremque libero
+                              voluptates
+                              quaerat
+                              nobis
+                              corrupti ea eos!</p>
+                          </span>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-quote " viewBox="0 0 16 16">
+                            <path
+                              d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z" />
+                          </svg>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <img src="../Boots_trap_Project.html/IMages-1/person-m-2.webp" alt="Profile"
+                          class="profile-img">
+                        <h5 class="mt-2">John Larson</h5>
+                        <h6 class="mt-2">Enterprenure</h6>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid brg position-relative mt-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 gd-2 ">
+          <div class="grid-item  mt-4">
+            <button type="button" class="border-0 btn-5 rounded-4 mt-3 ms-3 ps-3 pe-3 pt-2 pb-2" disabled>Limited time
+              offer</button>
+            <p class=" display-3 H1 mt-4 ms-3 border-0 tx">Discover Your Next <br>Adventure </p>
+            <p class=" sub-text me-6 pe-5">Unlock incredible destinations with our specially curated travel packages.
+              From exotic beaches to mountain peaks, your perfect getaway awaits.</p>
+
+            <div class="d-grid gap-2 d-md-block">
+              <button class="btn  btn-lg ms-2 mb-3 Exp" type="button">EXPLORE NOW</button>
+              <button class="btn  btn-lg  mb-3 btn-7" type="button">% VIEW DEALS</button>
+            </div>
+            <div class="container text-area  bg-light border brd rounded-4 p-2 pt-3 w-75 ms-0 mt-2">
+              <p>Need help choosing? <span class="call"><i class="bi bi-telephone"></i> Call +1 (555) 123-456</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 gd-1  pt-2">
+          <div class="grid-item">
+            <div class="card mb-2 border-0">
+              <img src="../Boots_trap_Project.html/IMages-1/showcase-3 (1).webp" class="card-img border rounded-4 "
+                style="max-width:1050px;" alt="...">
+              <div class="card-img-overlay">
+                <div class="stat-item d-inline-block p-2 position-absolute bottom-0 start-0">
+                  <span class="purecounter p-2  ms-2">500+</span>
+                  <div class="stat-label ms-3">Destinations</div>
+                </div>
+                <div class="stat-item d-inline-block p-2 position-absolute bottom-0 end-0 me-3">
+                  <span class="purecounter p-2  ms-4">10K</span>
+                  <div class="stat-label ms-3">Happy Travelers</div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container card my-5 p-5">
+      <div class="container py-5">
+        <div class="card subscribe-card p-4">
+          <div class="row align-items-center text-center text-md-start g-4">
+            <div class="col-12 col-md-auto">
+              <div class="icon-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor"
+                  class="bi bi-envelope-heart " viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l3.235 1.94a2.8 2.8 0 0 0-.233 1.027L1 5.384v5.721l3.453-2.124q.219.416.55.835l-3.97 2.443A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741l-3.968-2.442q.33-.421.55-.836L15 11.105V5.383l-3.002 1.801a2.8 2.8 0 0 0-.233-1.026L15 4.217V4a1 1 0 0 0-1-1zm6 2.993c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132" />
+                </svg>
+              </div>
+            </div>
+            <div class="col-12 col-md">
+              <h4 class="fw-bold">Stay in the Loop</h4>
+              <p class="mb-3">Get exclusive travel deals and destination guides delivered to your inbox</p>
+              <form class="d-md-none">
+                <div class="d-flex flex-column gap-1">
+                  <input type="email" class="form-control p-3" placeholder="Your email address">
+                  <button type="submit" class="btn btn-submit1   p-3" style=" background-color: #008B9A;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <form class="input-group d-none d-md-flex">
+                <input type="email" class="form-control p-3" placeholder="Your email address">
+                <button type="submit" class="btn btn-submit  p-3" style=" background-color: #008B9A;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+                  </svg>
+                </button>
+              </form>
+              <small class="d-block mt-2 text-muted">
+                <i class="bi bi-lock"></i> We protect your privacy. Unsubscribe anytime.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card text-center border-0 mt-5 brg">
+      <h2 class="card-title" style="font-family: Raleway, sans-serif; color: rgb(28 75 86);">Why Choose Us for Your Next
+        Adventure</h2>
+      <div class="card-body border-0">
+        <p class="card-text">Experience the difference with our premium travel services</p>
+      </div>
+    </div>
+
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 g-4 p-4">
+      <div class="col">
+        <div class="card h-100 text-center pt-2">
+          <div class="mx-auto">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-geo-alt env1" viewBox="0 0 16 16">
+              <path
+                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+              <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+            </svg>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Handpicked Destinations</h5>
+            <p class="card-text">very location is carefully selected by our travel experts for authentic experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center pt-2">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award env1"
+              viewBox="0 0 16 16">
+              <path
+                d="M9.669.864 8 0 6.331.864l-1.858.282-.842 1.68-1.337 1.32L2.6 6l-.306 1.854 1.337 1.32.842 1.68 1.858.282L8 12l1.669-.864 1.858-.282.842-1.68 1.337-1.32L13.4 6l.306-1.854-1.337-1.32-.842-1.68zm1.196 1.193.684 1.365 1.086 1.072L12.387 6l.248 1.506-1.086 1.072-.684 1.365-1.51.229L8 10.874l-1.355-.702-1.51-.229-.684-1.365-1.086-1.072L3.614 6l-.25-1.506 1.087-1.072.684-1.365 1.51-.229L8 1.126l1.356.702z" />
+              <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z" />
+            </svg>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Award-Winning Service</h5>
+            <p class="card-text">Recognized for excellence with 5-star ratings and industry awards</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100 text-center pt-2">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart env1"
+              viewBox="0 0 16 16">
+              <path
+                d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+            </svg>
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">Personalized Care</h5>
+            <p class="card-text">Tailored itineraries designed around your preferences and travel style.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class=" container-fluid w-100 position-relative bg-dark">
+    <div class="container text-center position-relative border-0 start-0 pt-4">
+      <div class="title " style="font-weight:900;font-size: 20px; color: rgb(28 75 86);">
+        <p>Join Our Newsletter</p>
+      </div>
+      <div class="body text-light">
+        <p class="text">Subscribe to our newsletter and receive the latest news about our products and services!</p>
+      </div>
+    </div>
+    <div class=" container container-fluid input-group w-50 justify-content-center ">
+      <input type="text" class="form-control bg-dark border  rounded-start-pill">
+      <button class="btn border  rounded-end-5" type="button" style="background-color: rgb(0, 140, 173);
+      color: white;">Search</button>
+    </div>
+    <div class="container  mt-4 position-relative">
+      <div class="row ">
+        <div class="col col-lg-3 col-md-4 col-sm-12 ">
+          <div class="container mt-3">
+            <div class="body text-light">
+              <h5 class="title mb-2">Tour</h5>
+              <h6 class="subtitle body-secondary mb-2 pt-3 text-light">A108 Adam Street<br>New York, NY 535022</h6>
+              <p class="text pt-4">Phone:<span> +1 5589 55488 55</span></p>
+              <p class="text">Email:<span> info@example.com</span></p>
+            </div>
+          </div>
+        </div>
+        <div class=" col-lg-3 col-md-4  col-sm-12   text-light ">
+          <p class="h5 pt-4" style="color:rgb(28 75 86);"> Useful Links</p>
+          <ul style="list-style: none;">
+            <li class="d-flex gap-2"><i class="bi bi-chevron-compact-right"></i><a class="nav-link text-light" a
+                href="#">Home</a>
+            </li>
+            <li class="d-flex gap-2"><i class="bi bi-chevron-compact-right"></i><a class="nav-link text-light" a
+                href="About.html">About us</a>
+            </li>
+            <li class="d-flex gap-2"><i class="bi bi-chevron-compact-right"></i><a class="nav-link text-light" a
+                href="#">Service</a>
+            </li>
+            <li class="d-flex gap-2"><i class="bi bi-chevron-compact-right"></i><a class="nav-link text-light" a
+                href="#">terms of services</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-lg-3 col-md-3 col-sm-12 ">
+          <p class="h5 pt-4 " style="color:rgb(28 75 86);">Our Service</p>
+          <ul style="list-style:none;">
+            <li class="d-flex gap-2"><i class="bi bi-chevron-compact-right"></i><a class="nav-link text-light" a
+                href="#">Web Design</a>
+            </li>
+            <li class="d-flex gap-2"><i class="bi bi-chevron-compact-right"></i><a class="nav-link text-light" a
+                href="#">Web Development</a>
+            </li>
+            <li class="d-flex gap-2"><i class="bi bi-chevron-compact-right"></i><a class="nav-link text-light" a
+                href="#">Product Management</a>
+            </li>
+            <li class="d-flex gap-2"><i class="bi bi-chevron-compact-right"></i><a class="nav-link text-light" a
+                href="#">Marketing</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col col-lg-3 col-md-3  col-sm-12 ">
+          <div class="container mt-3 ">
+            <div class="card-body text-light">
+              <h5 class="card-title mb-2 " style="color:rgb(28 75 86);">Follow Us</h5>
+              <h6 class="card-subtitle body-secondary mb-2 pt-3 text-light">Cras fermentum odio eu feugiat
+                lide par naso tierra videa magna derita valies</h6>
+              <div class="social-links d-flex gap-2 text-light">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-twitter-x" viewBox="0 0 16 16">
+                  <path
+                    d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-facebook" viewBox="0 0 16 16">
+                  <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-instagram" viewBox="0 0 16 16">
+                  <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,401 @@
+.Get-Started {
+  background-color: rgb(0, 140, 173);
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: white;
+}
+
+.navbar {
+  background-color: rgba(3, 3, 3, 0.7);
+}
+
+.navbar .navbar-brand {
+  color: white;
+}
+
+.navbar ul li a {
+  color: white;
+}
+
+.drop ul li a:hover {
+  color: rgb(0, 140, 173);
+}
+
+.blockquote-1 {
+  color: #1c4b56;
+  font-weight: bolder;
+}
+
+.Countries {
+  text-align: center;
+  display: block;
+  bottom: -18px;
+  right: 17rem;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 140, 173);
+  padding: 10px;
+  border-radius: 1.5rem;
+  /* z-index: +1; */
+  /* position: absolute; */
+}
+
+.Happy {
+  text-align: center;
+  display: block;
+  bottom: -8px;
+  right: 11rem;
+  background-color: white;
+  color: rgb(0, 140, 173);
+  padding: 8px;
+  border-radius: 1.5rem;
+  font-size: 10px;
+}
+
+.Our_Story {
+  color: rgb(0, 140, 173);
+  font-weight: 500;
+  background-color: rgb(188 228 237);
+  padding: 7.5px;
+  border-radius: 45px;
+  border-color: transparent;
+  top: -180px;
+  font-size: 15px;
+}
+
+.Word-1 {
+  color: rgb(0, 140, 173);
+  font-weight: 800;
+  font-size: 15px;
+}
+
+.Head-1 {
+  color: #1c4b56;
+  top: -120px;
+}
+
+.Para-1 {
+  font-family: Roboto, system-ui, -apple-system, "Segoe UI";
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.Global {
+  color: white;
+  background-color: rgb(0, 140, 173);
+  padding: 11px;
+  border-radius: 50%;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-wrapper {
+  height: 250px;
+  width: 400px;
+  perspective: 1000px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-wrapper:hover .content {
+  transform: rotateY(180deg);
+  transition: 1s;
+}
+
+.face-front,
+.face-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  color: white;
+  border-radius: 35px;
+}
+
+.face-front {
+  /* background-color: aqua; */
+  color: black;
+}
+
+.face-back {
+  padding-top: 50px;
+  background-color: rgb(0, 140, 173);
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.Svg {
+  height: 65px;
+  width: 75px;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(0, 140, 173);
+  background-color: #008cad26;
+  border-radius: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+.card-text {
+  display: flex;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background: #f8fafc;
+ 
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header h1 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  color: #1e293b;
+  margin-bottom: 8px;
+}
+
+.header p {
+  font-size: clamp(1rem, 3vw, 1.125rem);
+  color: #64748b;
+}
+
+.timeline-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.timeline-milestone {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: clamp(20px, 4vw, 40px);
+  align-items: center;
+  margin-bottom: clamp(40px, 8vw, 80px);
+  position: relative;
+}
+
+.timeline-milestone:last-child {
+  margin-bottom: 0;
+}
+
+/* Alternating zigzag layout */
+.timeline-milestone:nth-child(odd) {
+  grid-template-areas: "empty marker content";
+}
+
+.timeline-milestone:nth-child(even) {
+  grid-template-areas: "content marker empty";
+}
+
+.timeline-milestone:nth-child(even) .milestone-content {
+  text-align: right;
+}
+
+.timeline-milestone:nth-child(odd) .milestone-content {
+  text-align: left;
+}
+
+.milestone-marker {
+  grid-area: marker;
+  width: clamp(60px, 10vw, 80px);
+  height: clamp(60px, 10vw, 80px);
+  background: #0891b2;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 0 8px rgba(8, 145, 178, 0.1);
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.milestone-marker .year {
+  color: white;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 700;
+}
+
+.milestone-content {
+  grid-area: content;
+  background: white;
+  padding: clamp(18px, 3vw, 28px) clamp(20px, 3.5vw, 28px);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  max-width: 450px;
+  justify-self: start;
+}
+
+.timeline-milestone:nth-child(even) .milestone-content {
+  justify-self: end;
+}
+
+.milestone-content h4 {
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 12px 0;
+}
+
+.milestone-content p {
+  font-size: clamp(0.9375rem, 2vw, 1rem);
+  line-height: 1.6;
+  color: #475569;
+  margin: 0;
+}
+
+/* .Message {
+  background-color: rgb(0, 140, 173);
+  color: white;
+  border-radius: 25px;
+} */
+
+.BT-1 {
+  color: rgb(0, 140, 173);
+  background-color: white;
+  border: 2px solid white;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  border-radius: 45px;
+}
+
+/* .BT-1:hover{
+    box-shadow:;
+   } */
+.BT-2 {
+  color: white;
+  font-weight: 500;
+  background-color: rgb(0, 140, 173);
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 10px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.BT-2:hover {
+  background-color: white;
+  color: rgb(0, 140, 173);
+}
+
+.ct-1 {
+  align-items: center;
+}
+
+.txt-1 {
+  font-size: small;
+  font-weight: 100;
+}
+
+.bi-chevron-compact-right {
+  color: rgb(0, 140, 173);
+}
+
+.subscribe-card {
+  max-width: 900px;
+  margin: auto;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+.icon-box {
+  background-color: #008B9A;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  color: white;
+}
+
+.icon-box i {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.form-control {
+  border-radius: 2rem;
+}
+
+
+
+.a1 .View {
+  background-color: transparent;
+  color: rgb(0, 140, 173);
+  border: 2.5px solid rgb(0, 140, 173);
+}
+
+.a1 .View:hover {
+  color: white;
+  background-color: rgb(0, 140, 173);
+}
+
+.Badge {
+  position: absolute;
+  left: 370px;
+  top: 10px;
+  border: 1.5px solid black;
+  background-color: rgba(0, 0, 0, 0.5);
+}
